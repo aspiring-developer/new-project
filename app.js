@@ -13,8 +13,12 @@ mongodb.connect(connectionString, {useNewUrlParser: true, useUnifiedTopology: tr
 app.set("view engine", "ejs");
 app.set("views", "views");
 
+app.use(express.urlencoded({extended: false}));
+app.use(express.json());
+app.use(express.static('public'));
+
 app.get('/', function(req,res) {
-  res.send("<h1>Welcome to new app!</h1>")
+  res.render("index")
   console.log("home page!!!!!!!!")
 })
 
