@@ -1,0 +1,59 @@
+<div class="container m-0 p-4 mx-auto mainWrapper">
+  <div class="row headerRow text-center">
+    <div class="col headerColumn">
+      <h1>Eat-Da-Burger</h1>
+      <p> virtually create, select and modify your burgers! </p>
+    </div> <!-- .headerColumn ends -->
+  </div> <!-- .headerRow ends -->
+
+  <div class="row d-flex justify-content-center align-items-center">
+
+    <div class="col text-center my-4" id="burgerImageDiv">
+      <h5>Yummy Burger!!!</h5>
+         
+    <img src="https://user-images.githubusercontent.com/61030935/82099698-f7558980-96d5-11ea-9d0d-75cde272c2c9.jpg" alt="Chicken Sandwich Image" id="burgerImage" style="height: 200px; width: 300px"/>
+      </div>
+      
+    <div class="col">
+      
+      <h5 class="mt-4">Add a Burger</h5>
+      <form class="create-form">
+
+        <div class="form-group">
+          <label for="burgerLabel" class="inputLabel">Burger Name: &nbsp;</label> 
+          <input type="text" id="burgerLabel" name="burger_name"> 
+          <button type="submit" class="addBurgerBtn" id="addBurgerBtn">Add to the List</button>
+        </div>
+      </form>
+    </div> <!-- form wrapping column ends -->
+    
+    <hr>
+  </div>
+  
+  <div class="row d-flex justify-content-center align-items-center">
+    <div class="col-sm-12 col-md-6 p-2 newBurgerField">
+          <h5>New: Ready to Serve Burgers!</h5>
+      <br>
+      <ul>
+        {{#each burgers}}
+        {{#unless devoured}}
+        {{> burgers/burger-block devour=true}}
+        {{/unless}}
+        {{/each}}
+      </ul>
+    </div>
+    <div class="col-sm col-md-6 p-2 devouredBurgerField">
+        <h5>Burgers Moved to Trays!</h5>
+      <br>
+      <ul>
+        {{#each burgers}}
+        {{#if devoured}}
+        {{> burgers/burger-block devour=false}}
+        {{/if}}
+        {{/each}}
+      </ul>
+
+    </div>
+  </div> <!-- .mainSectionRow ends -->
+  
+</div> <!-- .mainWrapper ends -->

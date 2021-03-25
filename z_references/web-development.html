@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- ########## REQUIRED META TAGS ########## -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> Sharma Web Development & Graphic Design </title>
+  <!-- ########## FONT AWESOME ICON-FONTS ########## -->
+  <script src="https://kit.fontawesome.com/15bf670575.js" crossorigin="anonymous"></script>
+  <!-- ########## REQUIRED FOR JQUERY USE ########## -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- ########## STYLE SHEETS - CSS ########## -->
+  <link rel="stylesheet" href="bootstrap-assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="custom-assets/styles/reset.css">
+  <link rel="stylesheet" href="custom-assets/styles/main.css">
+</head>
+
+<body>
+  <!-- Main wrapper -->
+  <div class="container-fluid mx-0 px-0">
+    <!-- ########## HEADER SECTION ########## -->
+    <section>
+      <header class="py-2 pl-0">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent p-3 pl-5">
+          <a class="navbar-brand ml-0 mr-0" href="#">
+            <img src="custom-assets/images/Logo-White-Bg-Behind-Texts-250x101.png" alt="Sharma Web Development & Graphic Design Logo" class="img-fluid" /> </a>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse w-100" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"><i class="fas fa-home text-info"></i> Home <span class="sr-only">(current)</span></a>
+              </li>
+       
+              <ul class="dropdown">
+                <li class="dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a class="nav-link" href="portfolio-main.html"><i class="fas fa-layer-group text-info"> </i> Portfolio <i class="fas fa-caret-down"></i> </a>
+                </li>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <li class="dropdown-item"><a class="nav-link text-info" href="web-development.html"><i class="fas fa-laptop-code"></i> Web Development</a></li>
+                  <li class="dropdown-item" type="button"><a class="nav-link text-info" href="graphic-digital.html"><i class="fas fa-mouse"></i> Graphic Design <br> & Digital Drawing</a></li>
+                  <!-- <li class="dropdown-item" type="button"><a class="nav-link text-info" href="#"><i class="fas fa-drafting-compass"></i> Digital Drawing</a></li> -->
+                  <li class="dropdown-item" type="button"><a class="nav-link text-info" href="painting.html"><i class="fas fa-paint-brush"></i> Oil Painting <br> & Chalkboard Art</a></li>
+                  <!-- <li class="dropdown-item" type="button"><a class="nav-link text-info" href="#"><i class="fas fa-highlighter"></i> Chalkboard Art</a></li> -->
+                </ul>
+              </ul>
+              <li class="nav-item ml-1 mr-5">
+                <a class="nav-link" href="about.html"><i class="fas fa-id-card text-info"> </i> About</a>
+              </li>
+            </ul>
+          </div> <!-- .navbar-collapse ends -->
+        </nav>
+      </header>
+    </section> <!-- Header section ends -->
+
+    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+ <!-- ########## PORTFOLIO SECTION ##########  -->
+  <div class="col-12 thumbsWrapper my-4 py-4 d-flex justify-content-center align-items-center" id="portfolioAreaDisplay" name="portfolioAreaDisplay">
+    <h4 class="text-center pb-2 text-info"> Web Development Portfolio </h4>  
+ 
+  </div>
+  <hr>
+  <!-- ########## UI DISPLAY SECTION TOP ########## -->
+  <section>
+    <div class="row container-fluid my-4 mx-auto text-center">
+      <div class="col mt-0 px-4" id="projectUiDisplay">
+        <p> Click an image below to interact with the apps without leaving this page. </p>
+        <p> You may need to scroll the UI display container to view full content. </p>
+        <p class="text-info temporaryNote"> Note: By default, free version of Heroku hosting puts inactive apps to sleep mode. <br> I have used free version for this demonstration purpose.  <br>So, after clicking, you may need to wait 10-15 seconds to display two burger apps below. </p>
+      </div> <!-- #projectUiDisplay ends -->
+
+    </div>
+    <div class="row text-center d-flex justify-content-center align-items-center">
+      <div id="displayButton1" class="uiThumbWrapper" onclick="displayUiOne()">
+        <button class="btn webProjectThumbBox"> <img src="custom-assets/images/burger-mysql-ui-204x175.jpg" alt="Burger App Screenshot"></button>
+      </div>
+      <div id="displayButton2" class="uiThumbWrapper" onclick="displayUiTwo()">
+        <button class="btn webProjectThumbBox"> <img src="custom-assets/images/job-news-search-api-ui-204x175.jpg" alt="Job and News Search App Screenshot"> </button>
+      </div>
+      <div id="displayButton3" class="uiThumbWrapper" onclick="displayUiThree()">
+        <button class="btn webProjectThumbBox"> <img src="custom-assets/images/burger-sequelize-ui-204x175.jpg" alt="Job and News Search App Screenshot"> </button>
+      </div>
+      <div id="displayButton4" class="uiThumbWrapper" onclick="displayUiFour()">
+        <button class="btn webProjectThumbBox"> <img src="custom-assets/images/workday-scheduler-ui-204x175.jpg" alt="Work Day Scheduler App Screenshot"></button>
+      </div>
+      <div id="displayButton5" class="uiThumbWrapper" onclick="displayUiFive()">
+        <button class="btn webProjectThumbBox"> <img src="custom-assets/images/weather-dashboard-ui-204x175.jpg" alt="Weather Dashboard App Screenshot"> </button>
+      </div>
+      <div id="displayButton6" class="uiThumbWrapper" onclick="displayUiSix()">
+        <button class="btn webProjectThumbBox"> <img src="custom-assets/images/password-generator-ui-204x175.jpg" alt="Password Generator App Screenshot"> </button>
+      </div>
+    </div>
+  </section> <!-- UI display section top ends -->
+ 
+  <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- Web Page Thumb Section -->
+  <section>
+    <hr>
+    <h4 class="text-center pb-2 text-info"> Some of our client's website: </h4>
+    <div class="row webPageThumbRow">
+      
+      <div class="col-12 col-md-5 webPageColumn-1 text-center py-4 px-3 d-flex justify-content-center align-items-center">
+        <div class="col"> 
+          <a href="https://little-tokyo-sushi.herokuapp.com/" target="_blank"> <img src="custom-assets/images/sushi-web-screen-capture-150x150.jpg" alt="Sushi bar web page screenshot"> </a> </div>
+          <div class="col"> <p>This is a simple HTML and CSS based website built for a client. I used Adobe Photoshop and Illustartor to make logo, banner and optimize images.</p> </div>
+      </div> <!-- .webPageColumn-1 ends -->
+      <div class="col-12 col-md-5 webPageColumn-1 text-center py-4 px-3 d-flex justify-content-center align-items-center">
+        <div class="col"> 
+          <a href="http://henryandstewart.com/" target="_blank" > <img src="custom-assets/images/audiology-web-screen-capture-150x150.jpg" alt="Henry and Stewart Audiology web page screenshot"> </a> </div>
+        <div class="col"> <p>This website was built for one of my graphic design class friend's client. I used HTML5 and CSS3 to build it to have her design layout implemented as she expected. </p>  </div>
+      </div> <!-- .webPageColumn-2 ends -->
+    </div> <!-- .webPageThumbRow ends-->
+  </section>
+
+    <!-- ########## FOOTER SECTION ########## -->
+    <section>
+      <footer>
+        <!-- footer lower texts block -->
+        <div class="text-center bg-dark text-info py-4 px-3">
+          <p class="py-4 px-4"> &copy;2020 &bull; Sharma Web Development & Graphic Design &bull; Cary, North Carolina &bull; 919-793-4494 </p>
+        </div> <!-- footer lower texts block ends -->
+      </footer> <!-- footer ends-->
+    </section>
+  </div> <!-- Main wrapper container ends -->
+  <!-- Required Bootstrap JavaScript Files -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="bootstrap-assets/js/bootstrap.min.js"></script>
+  <!-- ########## CUSTOM JS ########## -->
+  <script src="custom-assets/scripts/js-for-ui-display.js"> </script>
+</body>
+
+</html>

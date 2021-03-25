@@ -1,0 +1,158 @@
+html {
+	background: #023b69;
+	height: auto;
+}
+
+#mainWrapper {
+	background-color: #e7e7e7;
+	padding: 0;
+	width: 100%;
+	height: 100vh;
+	margin: 0 auto;
+}
+
+.headerRow {
+	background-color: rgba(56, 14, 13, .8);
+	margin-bottom: 0;
+	padding: 0 2rem;
+}
+.nav-wrapper,
+.mainContentRow-2,
+.mainContentColumn-2-1 {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 1rem;
+
+}
+
+.mainContentColumn-2-1 h5 {
+	color: #b10505;
+	margin-top: 1rem;
+}
+
+.tabRow,
+.saveWrapperRow {
+	margin: 0 auto;
+	padding: 0;
+	margin-top: 1rem;
+	text-align: center;
+	background-color: #e7e7e7;
+}
+.tablink {
+	color: #3c5c6b;
+	float: left;
+	cursor: pointer;
+	padding: 1rem 0;
+	font-size: 1.1rem;
+	width: 50%;
+}
+
+.jobsTablink,
+#jobTab,
+.jobSaveLink,
+#jobResult {
+	background-color: #dacdf0;
+}
+
+.articlesTablink,
+#articleTab,
+.articleSaveLink,
+#articleResult {
+	background-color: #cdd2f0;
+}
+
+.tablink:hover {
+	background-color: #777;
+	color: #fff;
+}
+
+/* Dynamically updating contents below */
+.tabcontent {
+	color: #333;
+	padding: 1rem;
+	text-align: center;
+	margin-top: 1rem;
+}
+#jobTab,
+#jobResult,
+#articleTab,
+#articleResult {
+	margin: 0;
+	padding: 0;
+	margin-top: 0.5rem;
+	border: 1px solid #fff;
+}
+
+#jobTab .card-panel,
+#jobResult .card-panel,
+#articleTab .card-panel,
+#articleResult .card-panel {
+	border-radius: 15px;
+	margin: 1rem;
+	padding: 2rem;
+}
+#jobTab .card-panel,
+#jobResult .card-panel {
+	background-color: #f7eef8;
+}
+#articleTab .card-panel,
+#articleResult .card-panel {
+	background-color: #e0ecf1;
+}
+
+.card-panel a {
+	color: #b10505;
+}
+.card-panel p {
+	margin-top: 1rem;
+}
+.noMatch {
+	color: red;
+}
+.saveBtn {
+	background-color: #328fdb;
+	border-radius: 15px;
+	margin-top: 1.5rem;
+}
+
+#jobPrevious,
+#jobNext,
+#newsPrevious,
+#newsNext {
+	background-color: #880e4f;
+	padding: 0.5rem 1rem;
+	border-radius: 10px;
+	color: #e7e7e7;
+	cursor: pointer;
+	margin: 1rem;
+}
+/* Dynamically updating contents above */
+
+.footerRow {
+	background-color: rgba(56, 14, 13, 0.9);
+	padding: 2rem;
+}
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+
+
+
+
+#toggleOn {
+	display: none;
+}
+
+@media screen and (max-width: 992px) {
+	#articleTab {
+		display: none;
+	}
+	#toggleOff {
+		display: none;
+	}
+	#toggleOn {
+		display: block;
+	}
+}
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */

@@ -1,0 +1,104 @@
+* {
+   box-sizing: border-box;
+}
+
+ .mainWrapper {
+  background-color: #f7d9d9;
+  margin: 0;
+  padding: 0;
+}
+
+.headerColumn {
+  background-color: #f0b3b3;
+  margin: 0;
+  padding: 50px 0;
+}
+
+.headerColumn h1 {
+  color: brown;
+  text-transform: uppercase;
+  text-shadow: #f5e1e1 3px 3px 5px;
+}
+
+img {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+}
+#burgerImageDiv img{
+  border: 5px double #9c4d4d;
+  border-radius: 10px;
+  box-shadow: #4d1212 8px 8px 12px;
+}
+
+#burgerImage {
+  width: 300px;
+  height: 200px;
+} 
+
+h5 {
+  color: #703333;
+}
+
+/* FORM FIELD */
+input.new-item:focus {
+  outline: none;
+}
+
+.addBtn {
+background-color: #703333;
+color: #FFF;
+}
+
+.addBtn:hover {
+ color: #f7d9d9;
+  }
+
+  input:focus::placeholder {
+    color: transparent;
+  }
+
+/* targets burger form-filed area */
+ul .list-group-item {
+margin: 0;
+padding: 10px;
+background-color: #f0b3b3;
+padding-bottom: 25px;
+width: 100%;
+}
+
+.list-group-item > button.complete,
+.list-group-item > button.delete {
+  float: right;
+  height: auto;
+  margin-left: 10px;
+
+}
+/* targets edit field that displays when user clicks burger name in field */
+.edit {
+  width: 100%;
+}
+/* targets typed burger name in the list */
+.burgerList {
+color: #703333
+}
+/* targets burger list area wrapper (parent of .burger-list)  */
+.newBurgerField {
+  background-color: #f0b3b3;
+margin: 0 1rem;
+border-radius: 10px;
+padding: 20px;
+}
+/* targets burger li items (children to .newBurgerField) */
+/* .burger-list {
+  background-color: #103738;
+} */
+
+#footerDiv {
+  background-color: #f0b3b3;
+  color: #777;
+  padding: 20px 0;
+  margin-top: 20px;
+ 
+}

@@ -1,0 +1,61 @@
+body {
+  font-family: 'Fira Sans', sans-serif;
+margin: 0 auto;
+}
+.main-wrapper-container {
+  margin: 0 auto;
+  padding: 1rem 0;
+  /* width: 900px; */
+  max-width: 100%;
+  height: auto;
+  background-color: #e7f3f6;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+h1 {
+  font-size: 2rem;
+  font-weight:  bold;
+  color: #1853a0;
+  text-shadow: 2px 2px 4px #8a8daa;
+  margin: 1rem;
+}
+#characterCounter {
+  text-align: center;
+  max-width: 100%;
+}
+p {
+  margin-bottom: 1rem;
+}
+
+.top-container-column span{
+  font-size:.8rem;
+  font-weight: bold;
+  color: #1885a0;
+}
+#passwordButton {
+  padding: .7rem;
+  border-radius:20px;
+  outline: none;
+  background-color: #1885a0;
+  color: #f6f3ec;
+  text-transform: uppercase;
+  
+  }
+  #passwordResult {
+    padding: .5rem;
+    border: 1px solid #8a8daa;
+    border-radius:20px;
+    background-color: #eaf7d3;
+    color: #9b0b83;
+    text-align: center;
+    display: block;
+    width:20rem;
+    margin: 0 auto;
+ 
+    }
+   .top-container-column .bottomPara {
+      font-size: .7rem;
+    }

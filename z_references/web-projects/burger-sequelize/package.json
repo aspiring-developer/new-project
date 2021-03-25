@@ -1,0 +1,25 @@
+{
+  "name": "practice-sequelize-1",
+  "version": "1.0.0",
+  "description": "Just a practice. Not a project to look at!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssh1sharma/practice-sequelize-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ssh1sharma/practice-sequelize-1/issues"
+  },
+  "homepage": "https://github.com/ssh1sharma/practice-sequelize-1#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.1.0",
+    "sequelize": "^5.21.9"
+  }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Burger App </title>
+  <!-- bootstrap css/ local css/ jquery/bootstrap js -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css" type="text/css" />
+  <!-- <link rel="stylesheet" href="css/burger_style.css" type="text/css" /> -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+</head>
+
+<body>
+  <div class="container mx-auto mainWrapper">
+    <div class="row headerRow mx-auto text-center">
+      <div class="col headerColumn">
+        <h1>Manipulate Your Burger</h1>
+        <p> virtually create, select and modify your burgers! </p>
+      </div> <!-- .headerColumn ends -->
+    </div> <!-- .headerRow ends -->
+
+    <div class="row p-4 d-flex justify-content-center align-items-center">
+      <div class="col text-center my-4" id="burgerImageDiv">
+        <h5>Yummy Burger!!!</h5>
+        <img src="https://user-images.githubusercontent.com/61030935/82099698-f7558980-96d5-11ea-9d0d-75cde272c2c9.jpg" alt="Chicken Sandwich Image" id="burgerImage" style="height: 200px; width: 300px" />
+      </div>
+      <div class="col-sm-12 col-md-6 newBurgerField">
+        <h5>Add or Delete a Burger in the List. </h5>
+        <ul class="list-group burger-list">
+          <li class="list-group-item new-item">
+            <form id="burger-form">
+              <div class="container">
+                <div class="row text-center mt-2">
+                  <div class="col-8">
+                    <input class="new-item form-control" placeholder="type a burger name to add" type="text" />
+                  </div>
+                  <div class="col-4">
+                    <button type="submit" class="btn addBtn" id="addBurgerBtn">Add To List</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </li>
+          <span class="burger-container"> </span>
+        </ul>
+
+      </div>
+    </div> <!-- .mainSectionRow ends -->
+
+    <div id="footerDiv">
+      <p class="text-center">Burger App: Express, Sequelize, MySQL with NodeJS &bull; Shiva Sharma &bull; 2020</p>
+    </div>
+  </div> <!-- .mainWrapper ends  -->
+  <!-- This block below is custom for bootstrap and other use -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- Custom javascript -->
+  <script src="js/view.js" type="text/javascript"></script>
+  <script src="js/extra.js" type="text/javascript"></script>
+</body>
+
+</html>
