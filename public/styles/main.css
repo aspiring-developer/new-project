@@ -1,0 +1,615 @@
+/* COMMON FOR ALL SITES */
+
+/* Top masthead/bg-img, logo and navbar */
+
+header {
+	background-image: url("../images/header-bg-1500x200.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100%;
+}
+
+header img {
+	width: 200px;
+	max-width: 100%;
+	height: auto;
+}
+
+/* navigation lists */
+
+.navbar-nav {
+	font-size: 0.8rem;
+}
+
+/* navigation hamburger-3-lines-bar */
+
+.navbar-toggler-icon {
+	font-size: 1.2rem;
+}
+
+#navbarNav a {
+	color: #e5e0be;
+}
+
+.fa-caret-down {
+	color: #e5d3be;
+	font-size: 1.2rem;
+}
+
+/* Font custom attributes not available in Bootstrap-4 */
+
+h1 {
+	text-shadow: #b3b1b1 0.5rem 0.5rem 0.5rem;
+	font-size: 1.5rem;
+}
+
+h2 {
+	font-size: 1.3rem;
+}
+
+h3 {
+	font-size: 1rem;
+}
+
+h4 {
+	font-size: 0.9rem;
+}
+
+h5 {
+	font-size: 0.8rem;
+}
+
+h6 {
+	font-size: 0.8rem;
+}
+
+p {
+	font-size: 0.7rem;
+}
+
+.input-group {
+	width: 65%;
+}
+
+.form-group {
+	font-size: 0.8rem;
+}
+
+.form-control {
+	font-size: 0.8rem;
+}
+
+.btn {
+	font-size: 0.9rem;
+}
+
+.midImage {
+	background-image: url("../images/index-body-bg-1500x200.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100%;
+}
+
+.LinkedInIcon {
+	font-size: 1.5rem;
+}
+.gitHubIcon {
+	font-size: 1.5rem;
+}
+.faceBookIcon {
+	font-size: 1.5rem;
+}
+.youtubeIcon {
+	font-size: 1.5rem;
+}
+.LinkedInIcon:hover, .gitHubIcon:hover, .faceBookIcon:hover, .youtubeIcon:hover  {
+opacity: .8
+}
+
+/* ############################## */
+
+/* Web-Development Page */
+
+#projectUiDisplay {
+	width: 100%;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+#projectUiDisplay object {
+	width: 100%;
+	height: 500px;
+}
+
+#projectUiDisplay p {
+	font-size: 1rem;
+}
+
+.uiThumbWrapper {
+	border: 2px solid rgb(197, 197, 197);
+	padding: 0.5rem;
+	margin: .5rem 0.5rem;
+}
+
+.webProjectThumbBox {
+	/* border: 2px solid #a3a3a3; */
+	padding: 0;
+}
+
+.webProjectDisplayBox img {
+	width: 100%;
+	max-width: 100%;
+}
+
+.webProjectThumbBox img {
+	max-width: 100%;
+}
+
+.webPageThumbRow {
+	margin: 0 auto;
+	padding: 0;
+}
+
+.webPageColumn-1, .webPageColumn-2 {
+	margin: 0 auto;
+	padding: 0;
+	border: 1px solid #999;
+	background-color: #f3f3f3;
+	border-radius: 10px;
+	margin-bottom: 1rem;
+}
+
+.webPageColumn-1 img, .webPageColumn-2 img {
+	box-shadow: 5px 5px 10px 5px #6e6e6e;
+}
+
+/* ############################## */
+
+/* Graphic-Digital Page */
+
+#graphicPagesDisplayBox img {
+	border: 1px solid #999;
+	padding: .4rem;
+	margin: .5rem 0;
+}
+
+#midColumnDisplayBox img {
+	border: 1px solid #999;
+	padding: .4rem;
+	margin: .5rem 0;
+}
+
+#bottomColumnDisplayBox img {
+	border: 1px solid #999;
+	padding: .4rem;
+	margin: .5rem 0;
+}
+
+.portfolioDisplayCol {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.portfolioButtons {
+	background-color: #f5f1f1;
+	border-radius: 10px;
+	padding: .3rem .5rem;
+	border: 1px solid #b9b9b9;
+	margin: 0 auto;
+	font-size: .9rem;
+}
+
+.portfolioButtons:hover {
+	background-color: #79eeda;
+	cursor: pointer;
+}
+
+#fashionMagazineDescriptionDisplay {
+	display: block;
+}
+
+#brochureDescriptionDisplay, #collateralDescriptionDisplay, #healthMagazineDescriptionDisplay {
+	display: none;
+}
+
+#phoneDescriptionDisplay {
+	display: block;
+}
+
+#bathroomDescriptionDisplay {
+	display: none;
+}
+
+#houseDescriptionDisplay {
+	display: block;
+}
+
+#randomDescriptionDisplay {
+	display: none;
+}
+
+.descriptionTitle {
+	color: #17a2b8;
+}
+
+/* ############################## */
+
+/* About Page */
+.shivaImage {
+  width: 135px;
+  height: 180px;
+	border-radius: 8px;
+	margin-bottom: 1rem;
+	box-shadow: 10px 5px 8px rgb(0, 0, 0, .4);
+}
+.aboutPara .LinkedInIcon {
+  color: #0e76a8
+}
+.aboutPara .gitHubIcon {
+  color: #4078c0
+}
+.aboutPara .faceBookIcon {
+  color: #3b5998
+}
+.aboutPara .youtubeIcon {
+  color: #bb0000
+}
+.fa-css3-alt {
+	color: #2965f1;
+}
+.fa-bootstrap {
+	color: #602c50;
+}
+.fa-js-square {
+	color: #d8bf1b;
+}
+.fa-node-js {
+	color: #68A063;
+}
+.fa-code {
+color: #888;
+}
+.fa-html5 {
+color: #F16529;
+}
+.fa-database {
+	color: #888;
+}
+.fa-github-square {
+	color: #4078c0
+}
+.fa-git-square {
+	color: #F1502F;
+}
+.fa-react {
+	color: #61DBFB;
+}
+.fa-adobe {
+	color: #3B140A;
+}
+.fa-bezier-curve {
+	color: #888;
+}
+.fa-drafting-compass {
+	color: #888;
+}
+.fa-pen-nib {
+	color: #602c50;
+}
+.fa-sitemap{
+	color: #888;
+}
+
+/* Bootstrap default target is <544px. So, all codes above are for smaller devices less than 544px | Other 4 breakpoints: >544 | >768 | >992 | >1200 */
+
+/* Small devices (landscape phones, 544px and up) */
+
+@media (min-width: 544px) {
+	h1 {
+		font-size: 1.8rem;
+	}
+	h2 {
+		font-size: 1.5rem;
+	}
+	h3 {
+		font-size: 1.2rem;
+	}
+	h4 {
+		font-size: 1rem;
+	}
+	h5 {
+		font-size: 0.9rem;
+	}
+	h6 {
+		font-size: 0.9rem;
+	}
+	p {
+		font-size: 0.8rem;
+	}
+	.form-group {
+		font-size: 0.8rem;
+	}
+	.form-control {
+		font-size: 0.8rem;
+	}
+	.btn {
+		font-size: 0.9rem;
+	}
+	.LinkedInIcon {
+		font-size: 1.8rem;
+	}
+	.gitHubIcon {
+		font-size: 1.8rem;
+	}
+	.faceBookIcon {
+		font-size: 1.8rem;
+	}
+	.youtubeIcon {
+		font-size: 1.8rem;
+	}
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+
+@media (min-width: 768px) {
+	h1 {
+		font-size: 2.2rem;
+	}
+	h2 {
+		font-size: 1.7rem;
+	}
+	h3 {
+		font-size: 1.4rem;
+	}
+	h4 {
+		font-size: 1rem;
+	}
+	h5 {
+		font-size: 0.9rem;
+	}
+	h6 {
+		font-size: 0.9rem;
+	}
+	p {
+		font-size: 0.8rem;
+	}
+	.form-group {
+		font-size: 0.8rem;
+	}
+	.form-control {
+		font-size: 0.8rem;
+	}
+	.btn {
+		font-size: 0.9rem;
+	}
+	.navbar-toggler-icon {
+		font-size: 1.4rem;
+	}
+	.LinkedInIcon {
+		font-size: 2.2rem;
+	}
+	.gitHubIcon {
+		font-size: 2.2rem;
+	}
+	.faceBookIcon {
+		font-size: 2.2rem;
+	}
+	.youtubeIcon {
+		font-size: 2.2rem;
+	}
+}
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+	h1 {
+		font-size: 2.6rem;
+	}
+	h2 {
+		font-size: 1.9rem;
+	}
+	h3 {
+		font-size: 1.7rem;
+	}
+	h4 {
+		font-size: 1.3rem;
+	}
+	h5 {
+		font-size: 1.1rem;
+	}
+	h6 {
+		font-size: 1rem;
+	}
+	p {
+		font-size: 0.8rem;
+	}
+	.form-group {
+		font-size: 0.8rem;
+	}
+	.form-control {
+		font-size: 0.8rem;
+	}
+	.btn {
+		font-size: 0.9rem;
+	}
+	.navbar-nav {
+		font-size: 0.9rem;
+	}
+	/* Not-common; only this portfolio site specific */
+	header img {
+		width: 250px;
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+	h1 {
+		font-size: 2.6rem;
+	}
+	h2 {
+		font-size: 1.9rem;
+	}
+	h3 {
+		font-size: 1.7rem;
+	}
+	h4 {
+		font-size: 1.3rem;
+	}
+	h5 {
+		font-size: 1.1rem;
+	}
+	h6 {
+		font-size: 1rem;
+	}
+	p {
+		font-size: 0.8rem;
+	}
+	.form-group {
+		font-size: 0.8rem;
+	}
+	.form-control {
+		font-size: 0.8rem;
+	}
+	.btn {
+		font-size: 1rem;
+	}
+	.navbar-nav {
+		font-size: 1rem;
+	}
+	/* Not-common; only this portfolio site specific */
+	header img {
+		width: 300px;
+		max-width: 100%;
+		height: auto;
+	}
+	.LinkedInIcon {
+		font-size: 2.4rem;
+	}
+	.gitHubIcon {
+		font-size: 2.4rem;
+	}
+	.faceBookIcon {
+		font-size: 2.4rem;
+	}
+	.youtubeIcon {
+		font-size: 2.4rem;
+	}
+}
+
+/* Extra large devices (large desktops, 1440px and up) */
+
+@media (min-width: 1440px) {
+	h1 {
+		font-size: 3rem;
+	}
+	h2 {
+		font-size: 2.3rem;
+	}
+	h3 {
+		font-size: 1.7rem;
+	}
+	h4 {
+		font-size: 1.3rem;
+	}
+	h5 {
+		font-size: 1.1rem;
+	}
+	h6 {
+		font-size: 1.1rem;
+	}
+	p {
+		font-size: 0.9rem;
+	}
+	.form-group {
+		font-size: 0.9rem;
+	}
+	.form-control {
+		font-size: 0.8rem;
+	}
+	.btn {
+		font-size: 1rem;
+	}
+	.navbar-nav {
+		font-size: 1rem;
+	}
+	/* Not-common; only this portfolio site specific */
+	header img {
+		margin: 1rem 0;
+	}
+
+	.aboutPageIcons {
+		font-size: 1.5rem;
+	}
+	.LinkedInIcon {
+		font-size: 2.6rem;
+	}
+	.gitHubIcon {
+		font-size: 2.6rem;
+	}
+	.faceBookIcon {
+		font-size: 2.6rem;
+	}
+	.youtubeIcon {
+		font-size: 2.6rem;
+	}
+}
+
+/* Extra-Extra large devices (large tvs etc, 1920px and up) */
+
+@media (min-width: 1920px) {
+	h1 {
+		font-size: 3.5rem;
+	}
+	h2 {
+		font-size: 2.5rem;
+	}
+	h3 {
+		font-size: 2rem;
+	}
+	h4 {
+		font-size: 1.6rem;
+	}
+	h5 {
+		font-size: 1.5rem;
+	}
+	h6 {
+		font-size: 1.4rem;
+	}
+	p {
+		font-size: 1.2rem;
+	}
+	.form-group {
+		font-size: 1.1rem;
+	}
+	.form-control {
+		font-size: 1rem;
+	}
+	.btn {
+		font-size: 1.2rem;
+	}
+	.navbar-nav {
+		font-size: 1.2rem;
+	}
+	/* Not-common; only this portfolio site specific */
+	header img {
+		margin: 1.5rem 0;
+	}
+	.LinkedInIcon {
+		font-size: 2.9rem;
+	}
+	.gitHubIcon {
+		font-size: 2.9rem;
+	}
+	.faceBookIcon {
+		font-size: 2.9rem;
+	}
+	.youtubeIcon {
+		font-size: 2.9rem;
+	}
+
+}
