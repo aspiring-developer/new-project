@@ -10,7 +10,7 @@
   <!-- ########## FONT AWESOME ICON-FONTS ########## -->
   <script src="https://kit.fontawesome.com/15bf670575.js" crossorigin="anonymous"></script>
   <!-- ########## STYLE SHEETS - CSS ########## -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> <link rel="stylesheet" href="/styles/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">  <link rel="stylesheet" href="/styles/reset.css">
   <link rel="stylesheet" href="/styles/main.css">
 </head>
 
@@ -52,47 +52,69 @@
         </nav>
       </header>
     </section> <!-- Header section ends -->
-    <!-- ########## MAIN SECTION -1 ########## -->
-    <section>
-      <div class="row px-4">
-        <div class="col">
-          <h1 class="text-center text-dark text-uppercase font-weight-bold mt-5"> Full Stack Web Development <br> <span class="text-info"> & Graphic Design </span> </h1>
-          <!-- <h3 class="text-center text-warning my-3"> <em> This website is under construction.</em> </h3> -->
-        </div>
-      </div>
-    </section> <!-- Main section -1 ends -->
-    <!-- ########## MAIN SECTION -2 ########## -->
-    <section>
-      <div class="row my-4">
-        <div class="col p-5 text-center midImage">
-          <h6 class="text-white p-3" id="greetingTexts"> Welcome! And, thank you for visiting us! </h6>
-          <h6 class="text-white" id="greetingTexts"> This website is to showcase some of our work. </h6>
-          <!-- input group -->
-        <!--  <div class="input-group mx-auto">
-            <input type="text" class="form-control text-center" id="frontInput">
-          </div>  input group ends -->
-          <p class="text-warning pb-3 py-2"> Click a button below to go to the related portfolio page. </p>
-          <a href="/web-development"> <button type="button" class="btn btn-danger my-1" id="frontLgBtn"> Web Development </button> </a>
-          <a href="/graphic-digital"> <button type="button" class="btn btn-success my-1" id="frontLgBtn"> Graphic Design </button> </a>
-          <a href="/graphic-digital"> <button type="button" class="btn btn-primary my-1" id="frontLgBtn"> Digital Drawing </button> </a>
-          <a href="/painting"> <button type="button" class="btn btn-light my-1" id="frontLgBtn"> Oil Painting </button> </a>
-          <a href="/painting"> <button type="button" class="btn btn-secondary my-1" id="frontLgBtn"> Chalkboard Art </button> </a>
-          <a href="/about"> <button type="button" class="btn btn-dark my-1" id="frontLgBtn"> About Our Work </button> </a>
-        </div>
 
+    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+ <!-- ########## PORTFOLIO SECTION ##########  -->
+  <div class="col-12 thumbsWrapper my-4 py-4 d-flex justify-content-center align-items-center" id="portfolioAreaDisplay" name="portfolioAreaDisplay">
+    <h4 class="text-center pb-2 text-info"> Web Development Portfolio </h4>
+
+  </div>
+  <hr>
+  <!-- ########## UI DISPLAY SECTION TOP ########## -->
+  <section>
+    <div class="row container-fluid my-4 mx-auto text-center">
+      <div class="col mt-0 px-4" id="projectUiDisplay">
+        <p> Click an image below to interact with the apps without leaving this page. </p>
+        <p> You may need to scroll the UI display container to view full content. </p>
+        <p class="text-info temporaryNote"> Note: By default, free version of Heroku hosting puts inactive apps to sleep mode. <br> I have used free version for this demonstration purpose.  <br>So, after clicking, you may need to wait 10-15 seconds to display two burger apps below. </p>
+      </div> <!-- #projectUiDisplay ends -->
+
+    </div>
+    <div class="row text-center d-flex justify-content-center align-items-center">
+      <div id="displayButton1" class="uiThumbWrapper" onclick="displayUiOne()">
+        <button class="btn webProjectThumbBox"> <img src="/images/burger-mysql-ui-204x175.jpg" alt="Burger App Screenshot"></button>
       </div>
-    </section> <!-- Main section -2 ends -->
+      <div id="displayButton2" class="uiThumbWrapper" onclick="displayUiTwo()">
+        <button class="btn webProjectThumbBox"> <img src="/images/job-news-search-api-ui-204x175.jpg" alt="Job and News Search App Screenshot"> </button>
+      </div>
+      <div id="displayButton3" class="uiThumbWrapper" onclick="displayUiThree()">
+        <button class="btn webProjectThumbBox"> <img src="/images/burger-sequelize-ui-204x175.jpg" alt="Job and News Search App Screenshot"> </button>
+      </div>
+      <div id="displayButton4" class="uiThumbWrapper" onclick="displayUiFour()">
+        <button class="btn webProjectThumbBox"> <img src="/images/workday-scheduler-ui-204x175.jpg" alt="Work Day Scheduler App Screenshot"></button>
+      </div>
+      <div id="displayButton5" class="uiThumbWrapper" onclick="displayUiFive()">
+        <button class="btn webProjectThumbBox"> <img src="/images/weather-dashboard-ui-204x175.jpg" alt="Weather Dashboard App Screenshot"> </button>
+      </div>
+      <div id="displayButton6" class="uiThumbWrapper" onclick="displayUiSix()">
+        <button class="btn webProjectThumbBox"> <img src="/images/password-generator-ui-204x175.jpg" alt="Password Generator App Screenshot"> </button>
+      </div>
+    </div>
+  </section> <!-- UI display section top ends -->
+
+  <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- Web Page Thumb Section -->
+  <section>
+    <hr>
+    <h4 class="text-center pb-2 text-info"> Some of our client's website: </h4>
+    <div class="row webPageThumbRow">
+
+      <div class="col-12 col-md-5 webPageColumn-1 text-center py-4 px-3 d-flex justify-content-center align-items-center">
+        <div class="col">
+          <a href="https://little-tokyo-sushi.herokuapp.com/" target="_blank"> <img src="/images/sushi-web-screen-capture-150x150.jpg" alt="Sushi bar web page screenshot"> </a> </div>
+          <div class="col"> <p>This is a simple HTML and CSS based website built for a client. I used Adobe Photoshop and Illustartor to make logo, banner and optimize images.</p> </div>
+      </div> <!-- .webPageColumn-1 ends -->
+      <div class="col-12 col-md-5 webPageColumn-1 text-center py-4 px-3 d-flex justify-content-center align-items-center">
+        <div class="col">
+          <a href="http://henryandstewart.com/" target="_blank" > <img src="/images/audiology-web-screen-capture-150x150.jpg" alt="Henry and Stewart Audiology web page screenshot"> </a> </div>
+        <div class="col"> <p>This website was built for one of my graphic design class friend's client. I used HTML5 and CSS3 to build it to have her design layout implemented as she expected. </p>  </div>
+      </div> <!-- .webPageColumn-2 ends -->
+    </div> <!-- .webPageThumbRow ends-->
+  </section>
+
     <!-- ########## FOOTER SECTION ########## -->
     <section>
       <footer>
-        <!-- footer social icons -->
-        <div class="text-center mb-3 socialIcons">
-          <h4>Connect with us:</h4>
-          <hr class="w-100 mt-0 mb-2 ">
-          <p> <a class="LinkedInIcon fa-2x" href="https://www.linkedin.com/in/shivalal-sharma-298835199/" target="_blank"><i class="fab fa-linkedin" style="color:#0e76a8"></i></a>
-          <a class="gitHubIcon fa-2x" href="https://github.com/ssh1sharma" target="_blank"> <i class="fab fa-github-square"></i> </a>
-         </p>
-        </div> <!-- .socialIcons ends -->
         <!-- footer lower texts block -->
         <div class="text-center bg-dark text-info py-4 px-3">
           <p class="py-4 px-4"> &copy;<%= new Date().getFullYear(); %> &bull; Sharma Web Development & Graphic Design &bull; Cary, North Carolina &bull; 919-793-4494 </p>
@@ -105,9 +127,8 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- ########## CUSTOM JS ########## -->
   <script src="/scripts/js-for-ui-display.js"> </script>
-
-
 </body>
 
 </html>
