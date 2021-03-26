@@ -128,7 +128,7 @@ opacity: .8
 }
 
 .uiThumbWrapper {
-	border: 2px solid rgb(197, 197, 197);
+	/*border: 2px solid rgb(197, 197, 197);*/
 	padding: 0.5rem;
 	margin: .5rem 0.5rem;
 }
@@ -613,3 +613,57 @@ color: #F16529;
 	}
 
 }
+
+/* Web Development Page */
+
+.websiteColumn {
+  margin: 0 auto;
+  padding: 0;
+  border: 1px solid #999;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.websiteColumn img, .websiteColumn img {
+  box-shadow: 5px 5px 10px 5px #6e6e6e;
+}
+
+.websiteThumbBox img {
+  max-width: 100%;
+}
+
+.webProjectThumbBox {
+  border: 1px solid #a0e5f0;
+  padding: .4rem;
+  margin-top: 1rem;
+}
+
+.projectTitle {
+  padding: .6rem 0;
+  color: #17a2b8;
+  font-size: 1rem;
+}
+
+.project-caption{
+  width: 275px;
+}
+
+/*.projectTitle a {
+  color: #17a2b8;
+  font-size: 1rem;
+}*/
+
+/*.projectTitle a:hover {
+  color: orange;
+  font-size: 1rem;
+}*/
+
+.appGitHubLink a {
+  color: orange;
+}
+
+.appGitHubLink a:hover {
+  color: #17a2b8;
+}
+

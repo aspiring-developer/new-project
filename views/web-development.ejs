@@ -10,7 +10,8 @@
   <!-- ########## FONT AWESOME ICON-FONTS ########## -->
   <script src="https://kit.fontawesome.com/15bf670575.js" crossorigin="anonymous"></script>
   <!-- ########## STYLE SHEETS - CSS ########## -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">  <link rel="stylesheet" href="/styles/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="/styles/reset.css">
   <link rel="stylesheet" href="/styles/main.css">
 </head>
 
@@ -21,7 +22,7 @@
     <section>
       <header class="py-2 pl-0">
         <nav class="navbar navbar-expand-lg navbar-dark bg-transparent p-3 pl-5">
-          <a class="navbar-brand ml-0 mr-0" href="#">
+          <a class="navbar-brand ml-0 mr-0" href="/">
             <img src="/images/Logo-White-Bg-Behind-Texts-250x101.png" alt="Sharma Web Development & Graphic Design Logo" class="img-fluid" /> </a>
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -54,73 +55,104 @@
     </section> <!-- Header section ends -->
 
     <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
- <!-- ########## PORTFOLIO SECTION ##########  -->
-  <div class="col-12 thumbsWrapper my-4 py-4 d-flex justify-content-center align-items-center" id="portfolioAreaDisplay" name="portfolioAreaDisplay">
-    <h4 class="text-center pb-2 text-info"> Web Development Portfolio </h4>
-
-  </div>
-  <hr>
-  <!-- ########## UI DISPLAY SECTION TOP ########## -->
-  <section>
-    <div class="row container-fluid my-4 mx-auto text-center">
-      <div class="col mt-0 px-4" id="projectUiDisplay">
-        <p> Click an image below to interact with the apps without leaving this page. </p>
-        <p> You may need to scroll the UI display container to view full content. </p>
-        <p class="text-info temporaryNote"> Note: By default, free version of Heroku hosting puts inactive apps to sleep mode. <br> I have used free version for this demonstration purpose.  <br>So, after clicking, you may need to wait 10-15 seconds to display two burger apps below. </p>
-      </div> <!-- #projectUiDisplay ends -->
-
+    <!-- ########## PORTFOLIO SECTION ##########  -->
+    <div class="col-12 thumbsWrapper my-4 py-4 d-flex justify-content-center align-items-center" id="portfolioAreaDisplay" name="portfolioAreaDisplay">
+      <h4 class="text-center pb-2 text-info"> Web Development Portfolio </h4>
     </div>
+    <div class="col-12 text-center">
+      <p class="text-info temporaryNote"> Note: By default, free version of Heroku hosting puts inactive apps to sleep mode. <br> I have used free version for this demonstration purpose. <br>So, after clicking, you may need to wait 10-15 seconds to display two burger apps below. </p>
+    </div>
+
+    <hr />
+
     <div class="row text-center d-flex justify-content-center align-items-center">
       <div id="displayButton1" class="uiThumbWrapper" onclick="displayUiOne()">
-        <button class="btn webProjectThumbBox"> <img src="/images/burger-mysql-ui-204x175.jpg" alt="Burger App Screenshot"></button>
+        <a href="https://burger-app-sh.herokuapp.com/" target="_blank">
+          <button class="btn webProjectThumbBox">
+            <img src="/images/burger-mysql-ui-204x175.jpg" alt="Burger App Screenshot"></button></a>
+        <div class="project-caption">
+          <h4 class="projectTitle">Burger App-1</h4>
+          <p>A MySQL app that lets users virtually create, view, edit, save and delete their favorite burgers.</p>
+        </div>
       </div>
       <div id="displayButton2" class="uiThumbWrapper" onclick="displayUiTwo()">
-        <button class="btn webProjectThumbBox"> <img src="/images/job-news-search-api-ui-204x175.jpg" alt="Job and News Search App Screenshot"> </button>
+        <a href="https://richardkessler.github.io/Job-and-News-Search/"" target=" _blank"> <button class="btn webProjectThumbBox"> <img src="/images/job-news-search-api-ui-204x175.jpg" alt="Job and News Search App Screenshot"> </button></a>
+        <div class="project-caption">
+          <h4 class="projectTitle">Job & Article Search</h4>
+          <p>An app that helps web-dev related job and article search. It was built using two third-party APIs. </p>
+        </div>
       </div>
       <div id="displayButton3" class="uiThumbWrapper" onclick="displayUiThree()">
-        <button class="btn webProjectThumbBox"> <img src="/images/burger-sequelize-ui-204x175.jpg" alt="Job and News Search App Screenshot"> </button>
-      </div>
-      <div id="displayButton4" class="uiThumbWrapper" onclick="displayUiFour()">
-        <button class="btn webProjectThumbBox"> <img src="/images/workday-scheduler-ui-204x175.jpg" alt="Work Day Scheduler App Screenshot"></button>
-      </div>
-      <div id="displayButton5" class="uiThumbWrapper" onclick="displayUiFive()">
-        <button class="btn webProjectThumbBox"> <img src="/images/weather-dashboard-ui-204x175.jpg" alt="Weather Dashboard App Screenshot"> </button>
-      </div>
-      <div id="displayButton6" class="uiThumbWrapper" onclick="displayUiSix()">
-        <button class="btn webProjectThumbBox"> <img src="/images/password-generator-ui-204x175.jpg" alt="Password Generator App Screenshot"> </button>
+        <a href="https://sequelize-burger-app-sh.herokuapp.com/" target="_blank"> <button class="btn webProjectThumbBox"> <img src="/images/burger-sequelize-ui-204x175.jpg" alt="Job and News Search App Screenshot"> </button></a>
+        <div class="project-caption">
+          <h4 class="projectTitle">Burger App-2</h4>
+          <p>A Sequelize app that functions like the Burger-1, but it was built using ORM technology.</p>
+        </div>
       </div>
     </div>
+    <hr />
+
+    <div class="row text-center d-flex justify-content-center align-items-center">
+      <div id="displayButton4" class="uiThumbWrapper" onclick="displayUiFour()">
+        <a href="https://ssh1sharma.github.io/Work-Day-Scheduler/" target="_blank"> <button class="btn webProjectThumbBox"> <img src="/images/workday-scheduler-ui-204x175.jpg" alt="Work Day Scheduler App Screenshot"></button> </a>
+        <div class="project-caption">
+          <h4 class="projectTitle">Day Planner</h4>
+          <p>A Javascript and jQuery based app that helps create a daily schedule. Moment time and date object used.</p>
+        </div>
+      </div>
+      <div id="displayButton5" class="uiThumbWrapper" onclick="displayUiFive()">
+        <a href="https://ssh1sharma.github.io/Weather-Dashboard/" target="_blank"> <button class="btn webProjectThumbBox"> <img src="/images/weather-dashboard-ui-204x175.jpg" alt="Weather Dashboard App Screenshot"> </button> </a>
+        <div class="project-caption">
+          <h4 class="projectTitle">Weather Dashboard</h4>
+          <p>This app helps to search a city weather. It displays current weather and 5-days forecast. It was built using a third-party API.</p>
+        </div>
+      </div>
+      <div id="displayButton6" class="uiThumbWrapper" onclick="displayUiSix()">
+        <a href="https://ssh1sharma.github.io/Password-Generator/" target="_blank"> <button class="btn webProjectThumbBox"> <img src="/images/password-generator-ui-204x175.jpg" alt="Password Generator App Screenshot"> </button> </a>
+        <div class="project-caption">
+          <h4 class="projectTitle">Password Generator</h4>
+          <p>An html-validated password generator app. It randomly creates a password based on letters, numbers and special characters.</p>
+        </div>
+      </div>
+    </div>
+  </div>
   </section> <!-- UI display section top ends -->
 
   <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-<!-- Web Page Thumb Section -->
+  <!-- Web Page Thumb Section -->
   <section>
-    <hr>
+    <hr />
     <h4 class="text-center pb-2 text-info"> Some of our client's website: </h4>
     <div class="row webPageThumbRow">
 
       <div class="col-12 col-md-5 webPageColumn-1 text-center py-4 px-3 d-flex justify-content-center align-items-center">
         <div class="col">
-          <a href="https://little-tokyo-sushi.herokuapp.com/" target="_blank"> <img src="/images/sushi-web-screen-capture-150x150.jpg" alt="Sushi bar web page screenshot"> </a> </div>
-          <div class="col"> <p>This is a simple HTML and CSS based website built for a client. I used Adobe Photoshop and Illustartor to make logo, banner and optimize images.</p> </div>
+          <a href="https://little-tokyo-sushi.herokuapp.com/" target="_blank"> <img src="/images/sushi-web-screen-capture-150x150.jpg" alt="Sushi bar web page screenshot"> </a>
+        </div>
+        <div class="col">
+          <p>This is a simple HTML and CSS based website built for a client. I used Adobe Photoshop and Illustartor to make logo, banner and optimize images.</p>
+        </div>
       </div> <!-- .webPageColumn-1 ends -->
       <div class="col-12 col-md-5 webPageColumn-1 text-center py-4 px-3 d-flex justify-content-center align-items-center">
         <div class="col">
-          <a href="http://henryandstewart.com/" target="_blank" > <img src="/images/audiology-web-screen-capture-150x150.jpg" alt="Henry and Stewart Audiology web page screenshot"> </a> </div>
-        <div class="col"> <p>This website was built for one of my graphic design class friend's client. I used HTML5 and CSS3 to build it to have her design layout implemented as she expected. </p>  </div>
+          <a href="http://henryandstewart.com/" target="_blank"> <img src="/images/audiology-web-screen-capture-150x150.jpg" alt="Henry and Stewart Audiology web page screenshot"> </a>
+        </div>
+        <div class="col">
+          <p>This website was built for one of my graphic design class friend's client. I used HTML5 and CSS3 to build it to have her design layout implemented as she expected. </p>
+        </div>
       </div> <!-- .webPageColumn-2 ends -->
     </div> <!-- .webPageThumbRow ends-->
   </section>
 
-    <!-- ########## FOOTER SECTION ########## -->
-    <section>
-      <footer>
-        <!-- footer lower texts block -->
-        <div class="text-center bg-dark text-info py-4 px-3">
-          <p class="py-4 px-4"> &copy;<%= new Date().getFullYear(); %> &bull; Sharma Web Development & Graphic Design &bull; Cary, North Carolina &bull; 919-793-4494 </p>
-        </div> <!-- footer lower texts block ends -->
-      </footer> <!-- footer ends-->
-    </section>
+  <!-- ########## FOOTER SECTION ########## -->
+  <section>
+    <footer>
+      <!-- footer lower texts block -->
+      <div class="text-center bg-dark text-info py-4 px-3">
+        <p class="py-4 px-4"> &copy;<%= new Date().getFullYear(); %> &bull; Sharma Web Development & Graphic Design &bull; Cary, North Carolina &bull; 919-793-4494 </p>
+      </div> <!-- footer lower texts block ends -->
+    </footer> <!-- footer ends-->
+  </section>
   </div> <!-- Main wrapper container ends -->
 
   <!-- Required Bootstrap JavaScript -->
