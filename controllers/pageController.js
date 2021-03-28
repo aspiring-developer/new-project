@@ -24,7 +24,7 @@ exports.aboutController = function(req, res) {
 
 // Creating an instance of the User model based on user entered req.body
 exports.registerController = function(req,res) {
-  //console.log(req.body);
+  console.log(req.body);
 let user = new User(req.body);
 user.registerUser();
   //res.send("Thank you for registering!");

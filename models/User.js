@@ -12,7 +12,7 @@ let User = function (formData) {
 
 User.prototype.registerUser = function () {
   this.validate();
-  if(!this.errorMessage.length) {userEnteredData.collection("new_project_collection").insertOne(this.userInput)};
+  if(!this.errorMessage.length) {userEnteredData.collection("personal_site_collection").insertOne(this.userInput)};
 }
 
 User.prototype.validate = function () {
