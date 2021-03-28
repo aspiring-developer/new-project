@@ -10,16 +10,17 @@
   <!-- ########## FONT AWESOME ICON-FONTS ########## -->
   <script src="https://kit.fontawesome.com/15bf670575.js" crossorigin="anonymous"></script>
   <!-- ########## STYLE SHEETS - CSS ########## -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> <link rel="stylesheet" href="/styles/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="/styles/reset.css">
   <link rel="stylesheet" href="/styles/main.css">
 </head>
 
 <body>
   <!-- Main wrapper -->
-  <div class="container-fluid mx-0 px-0">
+  <div class="container-fluid mainWrapper">
     <!-- ########## HEADER SECTION ########## -->
     <section>
-      <header class="py-2 pl-0">
+      <header class="container-fluid py-2 pl-0">
         <nav class="navbar navbar-expand-lg navbar-dark bg-transparent p-3 pl-5">
           <a class="navbar-brand ml-0 mr-0" href="/">
             <img src="/images/Logo-White-Bg-Behind-Texts-250x101.png" alt="Sharma Web Development & Graphic Design Logo" class="img-fluid" /> </a>
@@ -54,7 +55,7 @@
     </section> <!-- Header section ends -->
     <!-- ########## MAIN SECTION -1 ########## -->
     <section>
-      <div class="row px-4">
+      <div class="row">
         <div class="col">
           <h1 class="text-center text-dark text-uppercase font-weight-bold mt-5"> Full Stack Web Development <br> <span class="text-info"> & Graphic Design </span> </h1>
           <!-- <h3 class="text-center text-warning my-3"> <em> This website is under construction.</em> </h3> -->
@@ -66,39 +67,54 @@
       <div class="row my-4">
         <div class="col p-5 text-center midImage">
           <h6 class="text-white p-3" id="greetingTexts"> Welcome! And, thank you for visiting us! </h6>
-          <h6 class="text-white" id="greetingTexts"> This website is to showcase some of our work. </h6>
+          <h6 class="text-white" id="greetingTexts"> This website showcases some of our work. </h6>
           <!-- input group -->
-        <!--  <div class="input-group mx-auto">
+          <!--  <div class="input-group mx-auto">
             <input type="text" class="form-control text-center" id="frontInput">
           </div>  input group ends -->
           <p class="text-warning pb-3 py-2"> Click a button below to go to the related portfolio page. </p>
           <a href="/web-development"> <button type="button" class="btn btn-danger my-1" id="frontLgBtn"> Web Development </button> </a>
           <a href="/graphic-digital"> <button type="button" class="btn btn-success my-1" id="frontLgBtn"> Graphic Design </button> </a>
           <a href="/graphic-digital"> <button type="button" class="btn btn-primary my-1" id="frontLgBtn"> Digital Drawing </button> </a>
-          <a href="/painting"> <button type="button" class="btn btn-light my-1" id="frontLgBtn"> Oil Painting </button> </a>
-          <a href="/painting"> <button type="button" class="btn btn-secondary my-1" id="frontLgBtn"> Chalkboard Art </button> </a>
-          <a href="/about"> <button type="button" class="btn btn-dark my-1" id="frontLgBtn"> About Our Work </button> </a>
+          <!--<a href="/painting"> <button type="button" class="btn btn-light my-1" id="frontLgBtn"> Oil Painting </button> </a>
+          <a href="/painting"> <button type="button" class="btn btn-secondary my-1" id="frontLgBtn"> Chalkboard Art </button> </a>-->
+          <!--<a href="/about"> <button type="button" class="btn btn-dark my-1" id="frontLgBtn"> About Our Work </button> </a>-->
         </div>
 
       </div>
     </section> <!-- Main section -2 ends -->
     <!-- ########## FOOTER SECTION ########## -->
+    <!-- Sign Up and Login Section -->
+    <section>
+      <div class="col loginBlock text-center">
+        <h6 class="mb-2">Login to view our side works</h6>
+        <form action="/login" method="POST" class="mb-2">
+          <input name="username" type="text" class="loginInput mb-1" placeholder="Username">
+          <input name="password" type="password" class="loginInput mb-1"  placeholder="Password">
+          <button class="btn btn-sm mb-1 loginButton">Log In</button>
+        </form>
+      </div> <!-- Log in block ends -->
+      <div class="col signUpBlock text-center">
+        <hr class="w-100 mt-2 mb-3 ">
+        <h6 class="mb-2">New user: Register here</h6>
+
+        <form action="/register" method="POST">
+          <input type="text" name="username" class="signUpInput mb-1"  placeholder="Type a username" />
+          <input type="text" name="email" class="signUpInput mb-1"  placeholder="you@example.com" />
+          <input type="password" name="password" class="signUpInput mb-1"  placeholder="Type a password" />
+          <button type="submit" class="btn btn-sm mb-1 signUpButton">Sign up</button>
+        </form>
+      </div> <!-- Sign up block ends -->
+    </section> <!-- Sign up and login section ends -->
+
+    <!-- Footer Section -->
     <section>
       <footer>
-        <!-- footer social icons -->
-        <div class="text-center mb-3 socialIcons">
-          <h4>Connect with us:</h4>
-          <hr class="w-100 mt-0 mb-2 ">
-          <p> <a class="LinkedInIcon fa-2x" href="https://www.linkedin.com/in/shivalal-sharma-298835199/" target="_blank"><i class="fab fa-linkedin" style="color:#0e76a8"></i></a>
-          <a class="gitHubIcon fa-2x" href="https://github.com/ssh1sharma" target="_blank"> <i class="fab fa-github-square"></i> </a>
-         </p>
-        </div> <!-- .socialIcons ends -->
-        <!-- footer lower texts block -->
         <div class="text-center bg-dark text-info py-4 px-3">
-          <p class="py-4 px-4"> &copy;<%= new Date().getFullYear(); %> &bull; Sharma Web Development & Graphic Design &bull; Cary, North Carolina &bull; 919-793-4494 </p>
-        </div> <!-- footer lower texts block ends -->
-      </footer> <!-- footer ends-->
-    </section>
+          <p class="py-4"> &copy;<%= new Date().getFullYear(); %> &bull; Sharma Web Development & Graphic Design &bull; Cary, North Carolina &bull; 919-793-4494 </p>
+        </div>
+      </footer>
+    </section> <!-- footer section ends-->
   </div> <!-- Main wrapper container ends -->
 
   <!-- Required Bootstrap JavaScript -->

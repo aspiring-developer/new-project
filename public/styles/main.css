@@ -1,6 +1,18 @@
 /* COMMON FOR ALL SITES */
 
 /* Top masthead/bg-img, logo and navbar */
+body {
+  /*background-color: #dedede;
+  background-color: #032541;*/
+}
+
+.mainWrapper {
+  margin: 0 auto;
+  padding: 0;
+  background-color: #fff;
+  border: 3px solid #e4e4e4
+
+}
 
 header {
 	background-image: url("../images/header-bg-1500x200.jpg");
@@ -8,6 +20,7 @@ header {
 	background-size: cover;
 	background-position: center;
 	height: 100%;
+
 }
 
 header img {
@@ -90,6 +103,8 @@ p {
 	background-size: cover;
 	background-position: center;
 	height: 100%;
+  margin: 0 auto;
+  max-width: 97%;
 }
 
 .LinkedInIcon {
@@ -107,6 +122,42 @@ p {
 .LinkedInIcon:hover, .gitHubIcon:hover, .faceBookIcon:hover, .youtubeIcon:hover  {
 opacity: .8
 }
+
+/* ############################## */
+
+/* Custom Styles for Index Page */
+.loginBlock {
+    width: 700px;
+  min-width: 400px;
+margin: 0 auto;
+/*margin-bottom: 1rem;*/
+background-color: #ebebeb;
+padding: 1rem;
+}
+
+.signUpBlock {
+  margin: 0 auto;
+  /*background-color: #c5c5c5;*/
+  padding: 1rem;
+  }
+
+.loginInput, .signUpInput {
+border: 1px solid #aeaeae;
+border-radius: 5px;
+padding: 5px;
+font-size: .9rem;
+}
+.loginInput::placeholder, .signUpInput::placeholder {
+font-size: .9rem;
+color: #aeaeae;
+  }
+
+  .loginButton, .signUpButton{
+    border: 1px solid #aeaeae;
+    padding: 3px 8px;
+    margin-top: 3px;
+  }
+
 
 /* ############################## */
 
