@@ -1,6 +1,8 @@
 // Importing/requiring modules/files
-const validator = require('validator');
 const userEnteredData = require('../db');
+const validator = require('validator');
+
+
 
 // Creating User model for database
 let User = function (formData) {
@@ -10,6 +12,7 @@ let User = function (formData) {
 
 User.prototype.registerUser = function () {
   this.validate();
+  if(!this.errorMessage.length) {userEnteredData.collection("new_project_collection").insertOne(this.userInput)};
 }
 
 User.prototype.validate = function () {
@@ -33,7 +36,7 @@ User.prototype.validate = function () {
   // This block below resets/updates the fields to have only wanted characters/texts/objects/etc (as validated codes above). And also trims and makes lower case of username and email field texts.
   this.userInput = {
     username: this.userInput.username.trim().toLowerCase(),
-    email: this.userInput.email.trim.toLowerCase(),
+    email: this.userInput.email.trim().toLowerCase(),
     password: this.userInput.password
   }
 }
