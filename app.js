@@ -1,47 +1,22 @@
+// Importing/requiring modules/files
 const express = require('express');
-const mongodb = require('mongodb');
 const app = express();
-require('dotenv').config();
+const mongodb = require('mongodb');
+const router = require('./router')
 
-let db;
-let connectionString = process.env.MONGO_URI;
-mongodb.connect(connectionString, {useNewUrlParser: true, useUnifiedTopology: true}, function(err, client) {
-  db = client.db();
-  console.log("Database connection established!")
-})
-
+// Configure for ejs template engine
 app.set("view engine", "ejs");
 app.set("views", "views");
 
+// Configure for body-parser to use req.body
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
+
+// Configure for static page usage
 app.use(express.static('public'));
 
-app.get('/', function(req,res) {
-  res.render("index")
-  console.log("home page!!!!!!!!")
-});
-app.get('/web-development', function(req,res) {
-  res.render("web-development")
-  console.log("Web Development page!!!!!!!!")
-});
+// Using router from router.js file (it is imported above)
+app.use('/', router);
 
-app.get('/graphic-digital', function(req,res) {
-  res.render("graphic-digital")
-  console.log("Graphic-Digital page!!!!!!!!")
-});
-
-app.get('/painting', function(req,res) {
-  res.render("painting")
-  console.log("Painting page!!!!!!!!")
-});
-
-app.get('/about', function(req,res) {
-  res.render("about")
-  console.log("About page!!!!!!!!")
-});
-
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, function(req,res) {
-console.log(`App is running on http://localhost:${PORT}`);
-});
+// Exporting app.js file modules to use in db.js file
+module.exports = app;
