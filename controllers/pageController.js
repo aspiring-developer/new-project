@@ -30,7 +30,7 @@ user.registerUser();
   if(user.errorMessage.length) {
     res.send(user.errorMessage);
   } else {
-    res.render("painting")
+    res.render("modal")
   }
 }
 
