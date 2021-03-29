@@ -27,10 +27,21 @@ exports.registerController = function(req,res) {
   console.log(req.body);
 let user = new User(req.body);
 user.registerUser();
-  //res.send("Thank you for registering!");
   if(user.errorMessage.length) {
     res.send(user.errorMessage);
   } else {
-    res.send("Good job! All fields received appropriate values.")
+    res.render("painting")
   }
 }
+
+// Creating an instance of the User model based on user entered req.body
+exports.loginController = function(req,res) {
+let user = new User(req.body);
+user.loginUser();
+  if(user.errorMessage.length) {
+    res.send(user.errorMessage);
+  } else {
+    res.render("painting")
+  }
+}
+

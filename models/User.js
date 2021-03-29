@@ -2,17 +2,10 @@
 const userEnteredData = require('../db');
 const validator = require('validator');
 
-
-
-// Creating User model for database
+// Creating User model for database (it is a construction function)
 let User = function (formData) {
   this.userInput = formData;
   this.errorMessage = [];
-}
-
-User.prototype.registerUser = function () {
-  this.validate();
-  if(!this.errorMessage.length) {userEnteredData.collection("personal_site_collection").insertOne(this.userInput)};
 }
 
 User.prototype.validate = function () {
@@ -40,6 +33,26 @@ User.prototype.validate = function () {
     password: this.userInput.password
   }
 }
+
+User.prototype.registerUser = function () {
+  //this.cleanUp();
+  this.validate();
+  if (!this.errorMessage.length) {
+    userEnteredData.collection("personal_site_collection").insertOne(this.userInput)
+  };
+}
+
+User.prototype.loginUser = function () {
+  this.validate();
+  userEnteredData.collection("personal_site_collection").findOne({username: this.userInput.username}, (err, userWhoIsLogging) => {
+if(userWhoIsLogging && userWhoIsLogging.password == this.userInput.password) {
+console.log("Successfully login")
+} else {
+console.log("Wrong UN or PW!")
+}
+  })}
+
+
 
 // Exporting User model to use in registerController module in PageController file
 module.exports = User;

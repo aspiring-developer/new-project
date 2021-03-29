@@ -13,5 +13,8 @@ router.get('/about', pageController.aboutController);
 // Creating post request route for register form field in index page
 router.post('/register', pageController.registerController);
 
+// Creating post request route for login form field in index page
+router.post('/login', pageController.loginController);
+
 // Exporting routes to use in app.js
 module.exports = router;
